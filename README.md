@@ -207,11 +207,22 @@ Distributed training is available via Slurm and [submitit](https://github.com/fa
 pip install submitit
 ```
 Train baseline DETR-6-6 model on 4 nodes for 300 epochs:
-```
+```pyhton
 python run_with_submitit.py --timeout 3000 --coco_path /path/to/coco
 ```
 
+## Demo
+
+There is a `demo` to show the detection result, and we select 2 frames from a video to show the effect of the queries.
+
+```pyhton
+python demo.py
+```
+
+## ![demo](https://tva1.sinaimg.cn/large/007S8ZIlly1gfin2mkolqj30w40dnmzw.jpg)
+
 # License
+
 DETR is released under the Apache 2.0 license. Please see the [LICENSE](LICENSE) file for more information.
 
 # Contributing
